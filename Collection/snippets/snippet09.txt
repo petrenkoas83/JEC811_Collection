@@ -1,0 +1,12 @@
+	// add a cd to the order
+	int cdNumber = 1;
+	int tracksToBeAdded = 3;
+	CompactDisc cd = data.addACd(prop, cdNumber);
+	for (int i=1; i <= tracksToBeAdded; i++){
+		// get the track data from the properties file
+		Track track = data.addATrack(prop, i);
+		cd.addTrack(track);
+	}
+	anOrder.addMedia(cd);
+	System.out.print("The total length of the CD is ");
+	System.out.println(cd.getLength());

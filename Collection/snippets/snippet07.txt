@@ -1,0 +1,18 @@
+    public CompactDisc addACd(Properties properties, int numberOfItems) {
+    	// set up the keys to read from the properties file
+    	String titleKey = new StringBuffer().append("cd").append(numberOfItems).append(".title").toString();
+    	System.out.print(titleKey + " = ");
+    	String categoryKey = new StringBuffer().append("cd").append(numberOfItems).append(".category").toString();
+    	String costKey = new StringBuffer().append("cd").append(numberOfItems).append(".cost").toString();
+    	String artistKey = new StringBuffer().append("cd").append(numberOfItems).append(".artist").toString();  		
+    	// Create a new CompactDisc object
+    	CompactDisc cd = new CompactDisc();
+    	cd.setTitle(properties.getProperty(titleKey));
+    	System.out.println(cd.getTitle());
+    	cd.setCategory(properties.getProperty(categoryKey));
+    	cd.setCost(Float.parseFloat(properties.getProperty(costKey)));
+    	System.out.print("Cost of CD = ");
+    	System.out.println(cd.getCost());
+    	cd.setArtist(properties.getProperty(artistKey));
+    	return cd;	
+    }

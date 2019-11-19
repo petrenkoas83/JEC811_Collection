@@ -1,0 +1,3 @@
+// Naming type parameter: T = a generic type	
+private T mediaType;
+private ArrayList<T> variable = new ArrayList<T>();

@@ -1,0 +1,7 @@
+	public int getLength() {
+		int total = 0;
+		for (Track track : tracks) {
+		   total += track.getLength();
+		}
+		return total;
+	}

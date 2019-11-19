@@ -1,0 +1,14 @@
+	public void addMedia(T v) {
+		// ensure that the element is not already in the
+		// ArrayList before adding
+		if (!(variable.contains(v))) {
+			variable.add(v);
+		}
+	}
+	public void removeMedia(T v) {
+		// ensure that the element is present in the
+		// ArrayList before removing
+		if ((variable.contains(v))) {
+			variable.remove(v);
+		}
+	}

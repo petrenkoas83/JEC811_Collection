@@ -1,0 +1,4 @@
+	private String artist;
+	private int length;
+	private ArrayList<Track> tracks = new ArrayList<Track>();
+	

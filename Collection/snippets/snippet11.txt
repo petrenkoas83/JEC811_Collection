@@ -1,0 +1,9 @@
+	public T getMediaType() {
+		return mediaType;
+	}
+	public void setMediaType(T mediaType) {
+		this.mediaType = mediaType;
+	}
+	public ArrayList<T> getVariable() {
+		return variable;
+	}

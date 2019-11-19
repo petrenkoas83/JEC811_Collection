@@ -1,0 +1,15 @@
+	public void addTrack(Track track1) {
+		// ensure that the track is not already in the
+		// ArrayList before adding
+		if (!(tracks.contains(track1))) {
+			tracks.add(track1);
+		}
+	}
+
+	public void removeTrack(Track track1) {
+		// ensure that the track is present in the
+		// ArrayList before removing
+		if ((tracks.contains(track1))) {
+			tracks.remove(track1);
+		}
+	}

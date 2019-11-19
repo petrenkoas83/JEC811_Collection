@@ -1,0 +1,12 @@
+	public Track addATrack(Properties properties, int trackNumber) {
+	// set up the keys to read from the properties file
+	String titleKey = new StringBuffer().append("t").append(trackNumber).append(".title").toString();
+	System.out.print(titleKey + " = ");
+	String lengthKey = new StringBuffer().append("t").append(trackNumber).append(".length").toString();
+	// create a new Track object and set the fields
+	Track t = new Track();
+	t.setTitle(properties.getProperty(titleKey));
+	System.out.println(t.getTitle());
+	t.setLength(Integer.parseInt(properties.getProperty(lengthKey)));
+	return t;
+}
